@@ -8,8 +8,10 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.0.32", features = ["derive"] }
+futures = "0.3.25"
 ndarray = "0.15.6"
 ndarray-stats = "0.5.1"
 noisy_float = "0.2.0"
+polars = { version = "0.26.1", features = ["lazy", "csv-file", "rank", "describe"] }
 reqwest = { version = "0.11.13", features = ["blocking"] }
 tokio = { version = "1.23.0", features = ["full"] }
